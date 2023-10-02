@@ -1,0 +1,20 @@
+12:21:17 **** Incremental Build of configuration Debug for project 005_T_bit_of_EPSR ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:11:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   11 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "005_T_bit_of_EPSR.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/neelakanta/STM32CubeIDE/F407_Workspace/005_T_bit_of_EPSR/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_T_bit_of_EPSR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_T_bit_of_EPSR.elf
+ 
+arm-none-eabi-size   005_T_bit_of_EPSR.elf 
+arm-none-eabi-objdump -h -S  005_T_bit_of_EPSR.elf  > "005_T_bit_of_EPSR.list"
+   text	   data	    bss	    dec	    hex	filename
+   3872	    108	   1588	   5568	   15c0	005_T_bit_of_EPSR.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_T_bit_of_EPSR.list
+ 
+
+12:21:18 Build Finished. 0 errors, 1 warnings. (took 1s.239ms)
+

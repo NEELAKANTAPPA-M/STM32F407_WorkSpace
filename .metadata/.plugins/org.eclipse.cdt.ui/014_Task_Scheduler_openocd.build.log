@@ -1,0 +1,10 @@
+14:05:23 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-size   014_Task_Scheduler_openocd.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2016	     12	   1652	   3680	    e60	014_Task_Scheduler_openocd.elf
+Finished building: default.size.stdout
+ 
+
+14:05:24 Build Finished. 0 errors, 0 warnings. (took 1s.249ms)
+

@@ -1,0 +1,10 @@
+23:15:15 **** Incremental Build of configuration Debug for project 008_USART_Int_pending ****
+make -j4 all 
+arm-none-eabi-size   008_USART_Int_pending.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5328	    108	   1588	   7024	   1b70	008_USART_Int_pending.elf
+Finished building: default.size.stdout
+ 
+
+23:15:16 Build Finished. 0 errors, 0 warnings. (took 1s.125ms)
+

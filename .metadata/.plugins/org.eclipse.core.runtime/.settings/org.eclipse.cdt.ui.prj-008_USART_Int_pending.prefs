@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/home/neelakanta/STM32CubeIDE/F407_Workspace/.metadata/.plugins/org.eclipse.cdt.ui/008_USART_Int_pending.build.log
+eclipse.preferences.version=1

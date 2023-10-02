@@ -1,0 +1,108 @@
+13:59:28 **** Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Inc/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Inc/main.d" -MT"Inc/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Inc/main.o"
+../Src/led.c:3:10: fatal error: led.h: No such file or directory
+    3 | #include "led.h"
+      |          ^~~~~~~
+compilation terminated.
+../Inc/main.c:23:10: fatal error: led.h: No such file or directory
+   23 | #include "led.h"
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:22: Src/led.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Inc/subdir.mk:19: Inc/main.o] Error 1
+../Src/main.c:23:10: fatal error: led.h: No such file or directory
+   23 | #include "led.h"
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:22: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:00:51 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Inc/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Inc/main.d" -MT"Inc/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Inc/main.o"
+../Src/led.c:3:10: fatal error: led.h: No such file or directory
+    3 | #include <led.h>
+      |          ^~~~~~~
+compilation terminated.
+../Inc/main.c:23:10: fatal error: led.h: No such file or directory
+   23 | #include "led.h"
+      |          ^~~~~~~
+compilation terminated.
+../Src/main.c:23:10: fatal error: led.h: No such file or directory
+   23 | #include <led.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Inc/subdir.mk:19: Inc/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:22: Src/main.o] Error 1
+make: *** [Src/subdir.mk:22: Src/led.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:02:12 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Inc/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Inc/main.d" -MT"Inc/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Inc/main.o"
+../Src/led.c:3:10: fatal error: ../Inc/led.h: No such file or directory
+    3 | #include "../Inc/led.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+../Inc/main.c:23:10: fatal error: led.h: No such file or directory
+   23 | #include "led.h"
+      |          ^~~~~~~
+../Src/main.c:23:10: fatal error: ../Inc/led.h: No such file or directory
+   23 | #include "../Inc/led.h"
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [Src/subdir.mk:22: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Inc/subdir.mk:19: Inc/main.o] Error 1
+make: *** [Src/subdir.mk:22: Src/led.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:02:52 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "014_Task_Scheduler_openocd.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/neelakanta/STM32CubeIDE/F407_Workspace/014_Task_Scheduler_openocd/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014_Task_Scheduler_openocd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014_Task_Scheduler_openocd.elf
+ 
+arm-none-eabi-size   014_Task_Scheduler_openocd.elf 
+arm-none-eabi-objdump -h -S  014_Task_Scheduler_openocd.elf  > "014_Task_Scheduler_openocd.list"
+   text	   data	    bss	    dec	    hex	filename
+   2016	     12	   1652	   3680	    e60	014_Task_Scheduler_openocd.elf
+Finished building: default.size.stdout
+Finished building: 014_Task_Scheduler_openocd.list
+ 
+ 
+14:03:33 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-gcc -o "014_Task_Scheduler_openocd.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/neelakanta/STM32CubeIDE/F407_Workspace/014_Task_Scheduler_openocd/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014_Task_Scheduler_openocd.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014_Task_Scheduler_openocd.elf
+ 
+arm-none-eabi-size   014_Task_Scheduler_openocd.elf 
+arm-none-eabi-objdump -h -S  014_Task_Scheduler_openocd.elf  > "014_Task_Scheduler_openocd.list"
+   text	   data	    bss	    dec	    hex	filename
+   2016	     12	   1652	   3680	    e60	014_Task_Scheduler_openocd.elf
+Finished building: default.size.stdout
+ 
+Finished building: 014_Task_Scheduler_openocd.list
+ 
+14:03:58 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-size   014_Task_Scheduler_openocd.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2016	     12	   1652	   3680	    e60	014_Task_Scheduler_openocd.elf
+Finished building: default.size.stdout
+ 
+14:05:23 **** Incremental Build of configuration Debug for project 014_Task_Scheduler_openocd ****
+make -j4 all 
+arm-none-eabi-size   014_Task_Scheduler_openocd.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2016	     12	   1652	   3680	    e60	014_Task_Scheduler_openocd.elf
+Finished building: default.size.stdout
+ 

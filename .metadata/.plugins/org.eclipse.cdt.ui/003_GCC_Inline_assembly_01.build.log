@@ -1,0 +1,20 @@
+22:04:54 **** Incremental Build of configuration Debug for project 003_GCC_Inline_assembly_01 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "003_GCC_Inline_assembly_01.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/neelakanta/STM32CubeIDE/F407_Workspace/003_GCC_Inline_assembly_01/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003_GCC_Inline_assembly_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 003_GCC_Inline_assembly_01.elf
+ 
+arm-none-eabi-size   003_GCC_Inline_assembly_01.elf 
+arm-none-eabi-objdump -h -S  003_GCC_Inline_assembly_01.elf  > "003_GCC_Inline_assembly_01.list"
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	003_GCC_Inline_assembly_01.elf
+Finished building: default.size.stdout
+ 
+Finished building: 003_GCC_Inline_assembly_01.list
+ 
+
+22:04:55 Build Finished. 0 errors, 1 warnings. (took 1s.192ms)
+

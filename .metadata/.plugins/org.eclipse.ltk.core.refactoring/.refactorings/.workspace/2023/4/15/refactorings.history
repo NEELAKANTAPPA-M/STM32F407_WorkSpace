@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;004_T_bit_of_EPSR&apos; to &apos;004_Access_Level&apos;" description="Rename resource &apos;004_T_bit_of_EPSR&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/004_T_bit_of_EPSR" name="004_Access_Level" stamp="1681021913835" updateReferences="true"/>
+</session>

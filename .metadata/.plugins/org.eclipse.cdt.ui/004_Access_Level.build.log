@@ -1,0 +1,10 @@
+12:08:08 **** Incremental Build of configuration Debug for project 004_Access_Level ****
+make -j4 all 
+arm-none-eabi-size   004_Access_Level.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3948	    108	   1588	   5644	   160c	004_Access_Level.elf
+Finished building: default.size.stdout
+ 
+
+12:08:09 Build Finished. 0 errors, 0 warnings. (took 1s.140ms)
+

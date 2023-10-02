@@ -1,0 +1,4 @@
+led.c:7:6:delay	2
+led.c:12:6:led_init_all	1
+led.c:43:6:led_on	1
+led.c:50:6:led_off	1

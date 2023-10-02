@@ -1,0 +1,20 @@
+22:22:24 **** Build of configuration Debug for project 011_fault_handling ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main_.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main_.d" -MT"Src/main_.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main_.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "011_fault_handling.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/neelakanta/STM32CubeIDE/F407_Workspace/011_fault_handling/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011_fault_handling.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 011_fault_handling.elf
+ 
+arm-none-eabi-size   011_fault_handling.elf 
+arm-none-eabi-objdump -h -S  011_fault_handling.elf  > "011_fault_handling.list"
+   text	   data	    bss	    dec	    hex	filename
+   6124	    108	   1588	   7820	   1e8c	011_fault_handling.elf
+Finished building: default.size.stdout
+ 
+Finished building: 011_fault_handling.list
+ 
+
+22:22:27 Build Finished. 0 errors, 0 warnings. (took 3s.135ms)
+
